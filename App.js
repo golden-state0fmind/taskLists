@@ -13,7 +13,8 @@ export default function App() {
       <StatusBar />
         <Stack.Navigator>
           <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="ColorPallete" component={ColorPallete} />
+          <Stack.Screen name="ColorPallete" component={ColorPallete} options={({ route }) => ({ title: route.params.paletteName })}
+  />
         </Stack.Navigator>
     </NavigationContainer>
   );
