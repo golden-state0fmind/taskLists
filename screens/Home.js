@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity StyleSheet } from 'react-native'
 
 const COLORS = [
     {colorName:"Cyan", hexCode:"#2aa198"},
@@ -18,8 +18,15 @@ export default function Home({navigation}) {
                     colors:COLORS
                 })
             }} >
-                <Text>Color World</Text>
+                <Text style={styles.text} >Color World</Text>
             </TouchableOpacity>
         </View>
     )
 }
+const styles= StyleSheet.create({
+    text:{
+        justifyContent:'center'
+        fontSize:18,
+        fontWeight:'bold'
+    }
+})
