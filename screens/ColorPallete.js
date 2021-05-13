@@ -18,7 +18,6 @@ export default function ColorPallete({ route }) {
                 ListHeaderComponent={<Text style={styles.text}>{palleteName}</Text>}
             />
         </SafeAreaView>
-
     )
 }
 const styles = StyleSheet.create({
