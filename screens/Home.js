@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
+import Test from './Test'
 
 const COLORS = [
     {colorName:"Cyan", hexCode:"#2aa198"},
@@ -20,6 +21,7 @@ export default function Home({navigation}) {
             }} >
                 <Text style={styles.text} >Color World</Text>
             </TouchableOpacity>
+                <Test/>
         </View>
     )
 }
